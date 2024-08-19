@@ -667,7 +667,7 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../images/banner-bg.jpg);
+  background-color: #008080;
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1016,7 +1016,7 @@ Courses Style
   position: absolute;
   right: -30px;
   top: -50px;
-  background-color: rgba(122, 106, 216, 0.95);
+  background-color: #008080;
   width: 130px;
   height: 130px;
   border-radius: 50%;
@@ -1192,7 +1192,7 @@ Team Style
 
 .team-member .main-content ul li a {
   background-color: #fff;
-  color: #7a6ad8;
+  color: #008080;
   display: inline-block;
   text-align: center;
   line-height: 40px;
@@ -1204,7 +1204,7 @@ Team Style
 }
 
 .team-member .main-content ul li a:hover {
-  background-color: #7a6ad8;
+  background-color: #008080;
   color: #fff;
 }
 
@@ -1246,7 +1246,7 @@ Testimonials Style
 }
 
 .testimonials .item {
-  background-color: #7a6ad8;
+  background-color: #008080;
   border-radius: 25px;
   padding: 80px;
 }
@@ -1296,7 +1296,7 @@ Testimonials Style
   line-height: 50px;
   font-size: 24px;
   display: inline-block;
-  color: #7a6ad8;
+  color: #008080;
   background-color: #fff;
   border-radius: 50%;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.10);
@@ -1363,7 +1363,7 @@ Events Style
 .events .item ul li span.category {
   font-size: 14px;
   text-transform: uppercase;
-  color: #7a6ad8;
+  color: #008080;
   background-color: #fff;
   padding: 8px 20px;
   border-radius: 25px;
@@ -1386,7 +1386,7 @@ Events Style
 
 .events .item ul li h6 {
   font-size: 16px;
-  color: #7a6ad8;
+  color: #008080;
   font-weight: 600;
 }
 
@@ -1394,7 +1394,7 @@ Events Style
   position: absolute;
   right: 0;
   top: 22px;
-  background-color: #7a6ad8;
+  background-color: #008080;
   width: 60px;
   height: 120px;
   display: inline-block;
@@ -1456,7 +1456,7 @@ Contact Style
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #7a6ad8;
+  background-color: #008080;
   width: 80px;
   padding: 30px 8px;
   line-height: 25px;
@@ -1486,7 +1486,7 @@ Contact Style
 
 .contact-us .special-offer h6 em {
   font-style: normal;
-  color: #7a6ad8;
+  color: #008080;
   font-weight: 600;
 }
 
@@ -1497,7 +1497,7 @@ Contact Style
 
 .contact-us .special-offer h4 em {
   font-style: normal;
-  color: #7a6ad8;
+  color: #008080;
 }
 
 .contact-us .special-offer a {
@@ -1509,7 +1509,7 @@ Contact Style
   display: inline-block;
   text-align: center;
   line-height: 50px;
-  background-color: #7a6ad8;
+  background-color: #008080;
   color: #fff;
   border-radius: 50%;
 }
@@ -1517,7 +1517,7 @@ Contact Style
 .contact-us .contact-us-content {
   border-radius: 25px;
   padding: 80px;
-  background-color: #7a6ad8;
+  background-color: #008080;
   position: relative;
   z-index: 1;
 }
@@ -1594,7 +1594,7 @@ Contact Style
   background-color: #fff;
   padding: 0px 25px;
   border-radius: 25px;
-  color: #7a6ad8;
+  color: #008080;
   transition: all .4s;
   position: relative;
   z-index: 3;
@@ -1606,8 +1606,8 @@ Contact Style
 
 .contact-us-content .more-info {
   text-align: center;
-  background: rgb(85,0,227);
-  background: linear-gradient(90deg, rgba(85,0,227,1) 0%, rgba(198,61,255,1) 100%);
+  background: #008080;
+  background: linear-gradient(90deg, #008080 0%, rgba(198,61,255,1) 100%);
   border-radius: 0px 0px 23px 23px;
   padding: 45px 30px 15px 30px;
 }
@@ -1638,7 +1638,7 @@ Footer Style
 footer {
   margin-top: 150px;
   position: relative;
-  background-color: #7a6ad8;
+  background-color: #008080;
   vertical-align: middle;
   min-height: 150px;
   border-radius: 150px 150px 0px 0px;
