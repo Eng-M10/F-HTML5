@@ -184,3 +184,18 @@
   z-index: 1;
   height: 100%;
   width: 100%; }
+
+  .accessibility-panel {
+    /* O estilo para o painel de acessibilidade */
+}
+
+.high-contrast {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.large-font {
+    font-size: 1.5rem !important;
+}
+
+/* Outros estilos para modos como baixa visão, daltônico, etc. */
