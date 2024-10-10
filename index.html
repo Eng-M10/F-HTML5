@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet">
+
 
   </head>
 
@@ -61,91 +63,6 @@
                         <h1>EL3MENTAR</h1>
                     </a>
                     <!-- ***** Logo End ***** -->
-                    
-                    <!-- ***** Accessibility Toggle Start ***** -->
- <!-- Botão de acessibilidade para abrir o painel -->
-<!-- Botão de acessibilidade para abrir o painel -->
-<button id="accessibility-toggle" class="btn btn-primary accessibility-btn" aria-label="Abrir painel de acessibilidade">Acessibilidade</button>
-
-
-<!-- Painel de Acessibilidade -->
-<div id="accessibility-panel" class="accessibility-panel" role="dialog" aria-labelledby="accessibility-heading">
-    <!-- Botão para fechar o painel -->
-    <button id="close-accessibility-panel" class="close-btn" aria-label="Fechar painel de acessibilidade">×</button>
-    
-    <h2 id="accessibility-heading">Opções de Acessibilidade</h2>
-
-    <!-- Opção para Modo Cego -->
-    <div class="accessibility-option">
-        <h3>Modo Cego</h3>
-        <p>Ativa a navegação por teclado e leitores de tela.</p>
-        <label>
-            <input type="checkbox" id="blind-mode">
-            Ativar
-        </label>
-    </div>
-
-    <!-- Opção para Baixa Visão -->
-    <div class="accessibility-option">
-        <h3>Modo Baixa Visão</h3>
-        <p>Alto contraste e aumento de fontes.</p>
-        <label>
-            <input type="checkbox" id="low-vision-mode">
-            Ativar
-        </label>
-    </div>
-
-    <!-- Opção para aumentar ou diminuir o tamanho da fonte -->
-    <h3>Tamanho da Fonte</h3>
-    <button id="increase-font" aria-label="Aumentar tamanho da fonte">A+</button>
-    <button id="decrease-font" aria-label="Diminuir tamanho da fonte">A-</button>
-
-    <!-- Opção de contraste -->
-    <h3>Contraste</h3>
-    <button id="high-contrast" aria-label="Ativar alto contraste">Alto Contraste</button>
-    <button id="normal-contrast" aria-label="Ativar contraste normal">Contraste Normal</button>
-</div>
-
-<style>
-/* Botão de acessibilidade fixo no lado direito */
-.accessibility-btn {
-    position: fixed;
-    top: 50%; /* Coloca o botão no meio vertical da janela */
-    transform: translateY(-50%); /* Centraliza verticalmente */
-    right: 20px; /* Ajuste de distância da borda direita */
-    z-index: 1000; /* Certifique-se que o botão esteja sobreposto a outros elementos */
-    background-color: #007bff; /* Cor do botão */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.accessibility-btn:hover {
-    background-color: #0056b3; /* Cor ao passar o mouse sobre o botão */
-}
-
-/* Painel de acessibilidade */
-.accessibility-panel {
-    /* Os mesmos estilos já aplicados anteriormente */
-    position: fixed;
-    top: 60px;
-    right: 20px;
-    width: 300px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    z-index: 1000;
-    display: none; /* O painel começa oculto */
-    border-radius: 8px;
-}
-
-
-</style>
-                    <!-- ***** Accessibility Toggle End ***** -->
                     
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
@@ -745,6 +662,174 @@
       </div>
     </div>
   </div>
+
+  
+  <style>
+
+
+/* Ajuste do contêiner do WhatsApp */
+.whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+}
+
+/* Ajuste do balão de mensagem */
+.whatsapp-message {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+    max-width: 180px;  /* Ajuste da largura */
+    font-size: 13px;    /* Tamanho menor da fonte */
+    position: absolute;
+    right: 65px;        /* Posição ajustada para ficar ao lado do ícone */
+    bottom: 15px;       /* Ajuste para alinhar o balão com o ícone */
+    z-index: 999;       /* Certificar que o balão fique acima de outros elementos */
+}
+
+.whatsapp-message p {
+    margin: 0;
+    color: #333;
+}
+
+/* Ajuste do ícone do WhatsApp */
+.whatsapp-icon {
+    cursor: pointer;
+    position: relative;
+}
+
+.whatsapp-icon img {
+    width: 45px;  /* Tamanho ajustado do ícone */
+    height: 45px; /* Tamanho ajustado do ícone */
+}
+
+/* Ajuste do modal */
+.modal-overlay {
+    display: none; /* Escondido inicialmente */
+    position: fixed; /* Trocar de absolute para fixed para que siga o scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #002B5B;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    width: 90%;
+    max-width: 350px; /* Reduzir a largura do modal */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed;  /* Manter o modal fixo durante o scroll */
+    right: 20px;  /* Ajuste para alinhar o modal mais à direita */
+    top: 20%;     /* Ajustar o topo para 20% da altura da tela */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.close-btn:hover {
+    color: red;
+}
+
+/* Estilos do formulário */
+form .form-control {
+    background-color: #fff;
+    color: #000;
+}
+
+form .input-group-text {
+    background-color: #fff;
+    color: #000;
+}
+
+form button {
+    background-color: #D1A054;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #C7943A;
+}
+
+    
+    
+        </style>
+    
+        <!-- Ícone do WhatsApp com balão de mensagem -->
+        <div class="whatsapp-container">
+            <!-- <div class="whatsapp-message">
+                <p>Olá, tudo bem?<br>Clique aqui e agende uma consulta com o especialista.</p>
+            </div> -->
+            <div class="whatsapp-icon" onclick="openModal()">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div id="contactModal" class="modal-overlay">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h3>Converse com um assistente da EL3MENTAR</h3>
+                <strong><p>Preencha o formulário abaixo e receba nosso contacto personalizado:</p></strong>
+                <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Seu nome</label>
+                        <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Seu e-mail</label>
+                        <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label">Seu telefone</label>
+                        <div class="input-group">
+                          <span class="input-group-text">
+                            <i class="flag-icon flag-icon-mz" aria-hidden="true"></i> +258
+                        </span>
+                            <input type="text" class="form-control" id="telefone" placeholder="848835520">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="problema" class="form-label">Sua mensagem...</label>
+                        <textarea class="form-control" id="problema" rows="3" placeholder="Descreva o seu problema"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Solicitar contacto</button>
+                </form>
+            </div>
+        </div>
+    
+        <!-- JavaScript -->
+        <script src="script.js"></script>
+        <script>
+            // Função para abrir o modal
+    function openModal() {
+        document.getElementById("contactModal").style.display = "block";
+    }
+    
+    // Função para fechar o modal
+    function closeModal() {
+        document.getElementById("contactModal").style.display = "none";
+    }
+    
+        </script>
  
   <footer>
     <div class="container">
