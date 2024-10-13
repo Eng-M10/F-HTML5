@@ -64,8 +64,6 @@
                     </a>
                     <!-- ***** Logo End ***** -->
                     
-<<<<<<< HEAD
-=======
                     <!-- ***** Accessibility Toggle Start ***** -->
  <!-- Botão de acessibilidade para abrir o painel -->
 <!-- Botão de acessibilidade para abrir o painel -->
@@ -151,7 +149,6 @@
 </style>
                     <!-- ***** Accessibility Toggle End ***** -->
                     
->>>>>>> 4692a8b64dbec21451e1b02f265c1bd1bff47833
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
                         <li class="scroll-to-section"><a href="#top" class="active">Início</a></li>
@@ -750,122 +747,8 @@
       </div>
     </div>
   </div>
-
-  
-  <style>
-
-
-/* Ajuste do contêiner do WhatsApp */
-.whatsapp-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    text-align: center;
-}
-
-/* Ajuste do balão de mensagem */
-.whatsapp-message {
-    background-color: #ffffff;
-    border-radius: 8px;
-    padding: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5px;
-    max-width: 180px;  /* Ajuste da largura */
-    font-size: 13px;    /* Tamanho menor da fonte */
-    position: absolute;
-    right: 65px;        /* Posição ajustada para ficar ao lado do ícone */
-    bottom: 15px;       /* Ajuste para alinhar o balão com o ícone */
-    z-index: 999;       /* Certificar que o balão fique acima de outros elementos */
-}
-
-.whatsapp-message p {
-    margin: 0;
-    color: #333;
-}
-
-/* Ajuste do ícone do WhatsApp */
-.whatsapp-icon {
-    cursor: pointer;
-    position: relative;
-}
-
-.whatsapp-icon img {
-    width: 45px;  /* Tamanho ajustado do ícone */
-    height: 45px; /* Tamanho ajustado do ícone */
-}
-
-/* Ajuste do modal */
-.modal-overlay {
-    display: none; /* Escondido inicialmente */
-    position: fixed; /* Trocar de absolute para fixed para que siga o scroll */
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-}
-
-.modal-content {
-    background: #002B5B;
-    color: white;
-    padding: 20px;
-    margin: 0;
-    width: 90%;
-    max-width: 350px; /* Reduzir a largura do modal */
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    position: fixed;  /* Manter o modal fixo durante o scroll */
-    right: 20px;  /* Ajuste para alinhar o modal mais à direita */
-    top: 20%;     /* Ajustar o topo para 20% da altura da tela */
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    color: white;
-}
-
-.close-btn:hover {
-    color: red;
-}
-
-/* Estilos do formulário */
-form .form-control {
-    background-color: #fff;
-    color: #000;
-}
-
-form .input-group-text {
-    background-color: #fff;
-    color: #000;
-}
-
-form button {
-    background-color: #D1A054;
-    border: none;
-    width: 100%;
-    padding: 10px;
-    color: white;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #C7943A;
-}
-
-    
-    
-        </style>
-    
-        <!-- Ícone do WhatsApp com balão de mensagem -->
+ <!-- Whatsapp -->
         <div class="whatsapp-container">
-            <!-- <div class="whatsapp-message">
-                <p>Olá, tudo bem?<br>Clique aqui e agende uma consulta com o especialista.</p>
-            </div> -->
             <div class="whatsapp-icon" onclick="openModal()">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
             </div>
@@ -904,20 +787,7 @@ form button:hover {
             </div>
         </div>
     
-        <!-- JavaScript -->
-        <script src="script.js"></script>
-        <script>
-            // Função para abrir o modal
-    function openModal() {
-        document.getElementById("contactModal").style.display = "block";
-    }
-    
-    // Função para fechar o modal
-    function closeModal() {
-        document.getElementById("contactModal").style.display = "none";
-    }
-    
-        </script>
+       <!-- Rodape -->
  
   <footer>
     <div class="container">
@@ -999,6 +869,20 @@ form button:hover {
         document.body.classList.remove('high-contrast');
     });
 </script>
+ <!-- JavaScript -->
+ <script src="script.js"></script>
+ <script>
+     // Função para abrir o modal
+function openModal() {
+ document.getElementById("contactModal").style.display = "block";
+}
+
+// Função para fechar o modal
+function closeModal() {
+ document.getElementById("contactModal").style.display = "none";
+}
+
+ </script>
 
   </body>
 </html>
