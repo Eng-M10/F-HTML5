@@ -69,7 +69,6 @@
 <!-- Botão de acessibilidade para abrir o painel -->
 <button id="accessibility-toggle" class="btn btn-primary accessibility-btn" aria-label="Abrir painel de acessibilidade"><i class="fa fa-universal-access" aria-hidden="true"></i></button>
 
-
 <!-- Painel de Acessibilidade -->
 <div id="accessibility-panel" class="accessibility-panel" role="dialog" aria-labelledby="accessibility-heading">
     <!-- Botão para fechar o painel -->
@@ -190,30 +189,30 @@
             </div>
             <div class="item item-2">
               <div class="header-text">
-                <span class="category">Best Result</span>
-                <h2>Get the best result out of your effort</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur voluptate natus ea quae vero quisquam, dignissimos a necessitatibus cupiditate officia beatae eaque qui tenetur perspiciatis mollitia, inventore corrupti esse.</p>
+                <span class="category">Os melhores resultados</span>
+                <h2>Obtemos junto com os nossos clientes os melhores resultados!</h2>
+                <p>Estamos dedicados a fornecer suporte educacional de qualidade para ajudar alunos a alcançarem melhores resultados acadêmicos.</p>
                 <div class="buttons">
                   <div class="main-button">
-                    <a href="#">Request Demo</a>
+                    <a href="#">Requisitar Demonstração</a>
                   </div>
                   <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's the best result?</a>
+                    <a href="#"><i class="fa fa-play"></i> O que é a Elementar?</a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="item item-3">
               <div class="header-text">
-                <span class="category">Online Learning</span>
-                <h2>Online Learning helps you save the time</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporious incididunt ut labore et dolore magna aliqua suspendisse.</p>
+                <span class="category">Mobilidade</span>
+                <h2>Ajudamos-te onde estiver!</h2>
+                <p>Oferecemos um acesso a conteúdos didáticos de qualidade e exercícios práticos de forma digital, os nossos alunos podem estudar onde e quando quiserem, transformando qualquer lugar em um espaço de aprendizado.</p>
                 <div class="buttons">
                   <div class="main-button">
-                    <a href="#">Request Demo</a>
+                    <a href="#">Requisitar Demonstração</a>
                   </div>
                   <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> What's Online Course?</a>
+                    <a href="#"><i class="fa fa-play"></i> O que é a Elementar?</a>
                   </div>
                 </div>
               </div>
@@ -234,9 +233,11 @@
             </div>
             <div class="main-content">
               <h4>Aulas presenciais</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et nesciunt, blanditiis ipsam, repellat id nulla incidunt in doloribus nam a cum. At vel atque ea id? Sapiente, aperiam assumenda!</p>
+              <p>Para alunos que buscam uma experiência de aprendizado mais interativa e personalizada, oferecemos aulas presenciais.</p>
+              <span class="treedots" >...</span>
+              <p class="paragrafo-hidden" style="display: none;">Nestas aulas, os alunos podem contar com o apoio direto de professores experientes, tirar dúvidas em tempo real e participar de discussões enriquecedoras que aprofundam o entendimento das matérias. O ambiente presencial favorece a troca de ideias e o desenvolvimento de habilidades sociais, criando um espaço propício para uma aprendizagem colaborativa e motivadora.</p>
               <div class="main-button">
-                <a href="#">Ver mais</a>
+                <a href="#" onclick="toggleContent(event)">Ver mais</a>
               </div>
             </div>
           </div>
@@ -248,9 +249,11 @@
             </div>
             <div class="main-content">
               <h4>Cursos de curta duração</h4>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum libero porro, Totam!</p>
+              <p>Para alunos que desejam adquirir novos conhecimentos de forma rápida e focada.</p>
+              <span class="treedots" >...</span>
+              <p class="paragrafo-hidden" style="display: none;"> Os nossos cursos são estruturados para abordar tópicos específicos e fornecer habilidades práticas e aplicáveis em um curto período, atendendo às necessidades de quem busca aprender de maneira objetiva e eficiente.  Com uma abordagem direcionada e instrutores experientes, os cursos de curta duração da Elementar permitem que os alunos complementem sua formação, atualizem conhecimentos e se preparem para desafios acadêmicos e profissionais em pouco tempo, mantendo a flexibilidade de horários e o foco no que realmente importa para cada área de interesse.</p>
               <div class="main-button">
-                <a href="#">Ver mais</a>
+                <a href="#" onclick="toggleContent(event)">Ver mais</a>
               </div>
             </div>
           </div>
@@ -262,9 +265,11 @@
             </div>
             <div class="main-content">
               <h4>Material didático.</h4>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit atque nostrum amet ipsam perspiciatis in ab maxime iste quae ut illo.</p>
+              <p>Para facilitar o entendimento dos alunos, fornecemos materiais didáticos de alta qualidade, cuidadosamente desenvolvidos.</p>
+              <span class="treedots">...</span>
+              <p class="paragrafo-hidden" style="display: none;">Cada material é estruturado de forma prática e objetiva, com conteúdos atualizados e organizados para reforçar os conceitos-chave e estimular a aplicação do conhecimento. Além disso, esses materiais incluem exercícios práticos, resumos, exemplos e guias passo a passo que ajudam os estudantes a fixar os conteúdos de forma eficiente. Com recursos acessíveis e adaptados às diferentes necessidades de cada disciplina, a Elementar garante que seus materiais didáticos sejam uma ferramenta valiosa para o aprendizado contínuo e o sucesso acadêmico dos alunos.</p>
               <div class="main-button">
-                <a href="#">Ver mais</a>
+                <a href="#" onclick="toggleContent(event)">Ver mais</a>
               </div>
             </div>
           </div>
@@ -281,48 +286,48 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Where shall we begin?
+                  Por onde começar?
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                  <p>Uma avaliação inicial para identificar o <strong>nível de conhecimento</strong> e as áreas que precisam de mais atenção. Com base nesse diagnóstico, os estudantes recebem uma orientação personalizada para escolher os cursos e materiais mais adequados às suas metas acadêmicas.</p>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  How do we work together?
+                  Como trabalham?
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                  <p>Aqui trabalhamos com foco total na experiência e nos resultados dos nossos alunos.</p>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Why SCHOLAR is the best?
+                  Porque escolher a Elementar?
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.<strong>Lorem</strong>Elementar website. You can browse by different tags or categories.
+                 <p>Escolher-nos é optar por uma experiência de aprendizado completa, personalizada e de alta qualidade. Na Elementar, os alunos têm acesso a um método de ensino que combina flexibilidade e foco em resultados, com opções de cursos online, aulas presenciais e materiais didáticos elaborados para facilitar a compreensão e a prática.</p>
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Do we get the best support?
+                  Recebemos o melhor suporte?
                 </button>
               </h2>
               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  Lorem ipsum <code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt modi quibusdam, assumenda corrupti maxime. Facere aut obcaecati excepturi id suscipit adipisci pariatur explicabo repellendus. Possimus earum eum quo autem..</code>
+                  <p>O suporte ao aluno é uma prioridade. Nossa equipe de tutores e professores está sempre disponível para responder dúvidas, oferecer orientação e acompanhar o progresso de cada estudante. O suporte inclui atendimento individualizado, seja presencialmente ou online, além de recursos como fóruns de discussão e sessões de monitoria para reforçar o entendimento dos conteúdos. Esse apoio contínuo ajuda os alunos a superarem desafios, revisarem conceitos e seguirem no ritmo mais adequado para o seu aprendizado.</p>
                 </div>
               </div>
             </div>
@@ -332,9 +337,11 @@
           <div class="section-heading">
             <h6>Sobre nós</h6>
             <h2>Porque que temos a certeza de que somos a sua melhor opção?</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p>
+            <p>
+              Na Elementar, combinamos excelência acadêmica com um atendimento personalizado, sempre focado nas necessidades e objetivos individuais de cada aluno. Nosso compromisso é oferecer uma educação acessível, dinâmica e eficiente, unindo o melhor dos métodos tradicionais e das tecnologias educacionais.
+            </p>
             <div class="main-button">
-              <a href="#">Discover More</a>
+              <a href="https://www.facebook.com/profile.php?id=100064129233326" target="_blank">Descubra Mais</a>
             </div>
           </div>
         </div>
@@ -370,12 +377,12 @@
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/course-01.png" alt=""></a>
+              <a href="#"><img src="assets/images/WebDesigning.jpg" alt=""></a>
               <span class="category">Webdesign</span>
-              <span class="price"><h6><em></em>1600MZN</h6></span>
+              <span class="price"><h6><em></em>1600</h6></span>
             </div>
             <div class="down-content">
-              <span class="author">Coach_Ghost</span>
+              <span class="author">Cristiano Paulo</span>
               <h4>Tudo sobre Web Design</h4>
             </div>
           </div>
@@ -383,12 +390,12 @@
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  development">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/course-02.png" alt=""></a>
+              <a href="#"><img src="assets/images/DedicatedDeveloper.jpg" height="300px" alt=""></a>
               <span class="category">Development</span>
-              <span class="price"><h6><em></em>3400MZN</h6></span>
+              <span class="price"><h6><em></em>3400</h6></span>
             </div>
             <div class="down-content">
-              <span class="author">M_10</span>
+              <span class="author">Mauro Cossa</span>
               <h4>Web Development</h4>
             </div>
           </div>
@@ -396,12 +403,12 @@
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design wordpress">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/course-03.png" alt=""></a>
-              <span class="category">Wordpress</span>
+              <a href="#"><img src="assets/images/DigitalMarketing.gif"  alt=""></a>
+              <span class="category">Marketing Digital</span>
               <span class="price"><h6><em></em>2400</h6></span>
             </div>
             <div class="down-content">
-              <span class="author">Hutson</span>
+              <span class="author">Sinmi Williams </span>
               <h4>Web Trends</h4>
             </div>
           </div>
@@ -409,33 +416,33 @@
         <!-- <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/course-04.png" alt=""></a>
+              <a href="#"><img src="assets/images/MSOffice.jpg" alt=""></a>
               <span class="category">Development</span>
               <span class="price"><h6><em></em>4500</h6></span>
             </div>
             <div class="down-content">
-              <span class="author">Taylor</span>
-              <h4>Online</h4>
+              <span class="author">Keith Powers</span>
+              <h4>O pacote Office</h4>
             </div>
           </div>
         </div> -->
         <!-- <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress development">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/course-05.png" alt=""></a>
+              <a href="#"><img src="assets/images/wordpress.jpg" alt=""></a>
               <span class="category">Wordpress</span>
               <span class="price"><h6><em></em>3200MZN</h6></span>
             </div>
             <div class="down-content">
-              <span class="author">Roger</span>
+              <span class="author">Rafael Munguambe</span>
               <h4>Mestre do WordPress</h4>
             </div>
           </div>
         </div> -->
-        <!-- <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
+        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/course-06.png" alt=""></a>
+              <a href="#"><img src="assets/images/Build Your First Full-Stack Web App in Just 7 Days!.jpg" alt=""></a>
               <span class="category">Webdesign</span>
               <span class="price"><h6><em></em>2400MZN</h6></span>
             </div>
@@ -444,7 +451,7 @@
               <h4>Full Stack Developer</h4>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
   </section>
@@ -492,9 +499,9 @@
         <div class="col-lg-3 col-md-6">
           <div class="team-member">
             <div class="main-content">
-              <img src="assets/images/member-01.png" alt="">
-              <span class="category">UX Teacher</span>
-              <h4>Coach_Ghost</h4>
+              <img src="assets/images/preto-1.jpg" height="250px"  alt="">
+              <span class="category">Professor de Programação</span>
+              <h4>Mauro Cossa</h4>
               <ul class="social-icons">
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -506,9 +513,9 @@
         <div class="col-lg-3 col-md-6">
           <div class="team-member">
             <div class="main-content">
-              <img src="assets/images/member-02.png" alt="">
-              <span class="category">Graphic Teacher</span>
-              <h4>M_10</h4>
+              <img src="assets/images/Jonathan Majors_.jpg" height="250px" alt="">
+              <span class="category">Professor de Design Gráfico</span>
+              <h4>Jonathan Majors</h4>
               <ul class="social-icons">
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -520,9 +527,9 @@
         <div class="col-lg-3 col-md-6">
           <div class="team-member">
             <div class="main-content">
-              <img src="assets/images/member-03.png" alt="">
-              <span class="category">Full Stack Master</span>
-              <h4>David Hutson</h4>
+              <img src="assets/images/Keith powers.jpg" height="250px"  alt="">
+              <span class="category">Pacote Microsoft Office Master</span>
+              <h4>Keith Powers</h4>
               <ul class="social-icons">
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -534,9 +541,9 @@
         <div class="col-lg-3 col-md-6">
           <div class="team-member">
             <div class="main-content">
-              <img src="assets/images/member-04.png" alt="">
-              <span class="category">Digital Animator</span>
-              <h4>Stella Blair</h4>
+              <img src="assets/images/sinmi.jpg" height="250px" alt="">
+              <span class="category">Professora de Marketing Digital </span>
+              <h4>Sinmi Williams </h4>
               <ul class="social-icons">
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -555,26 +562,26 @@
         <div class="col-lg-7">
           <div class="owl-carousel owl-testimonials">
             <div class="item">
-              <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iste recusandae error consectetur, temporibus ea explicabo, eius corporis quisquam assumenda minima porro voluptatibus dolor reprehenderit nihil rerum quae nam non..”</p>
+              <p>“ O suporte dos instrutores e os materiais didáticos foram fundamentais para eu adquirir segurança em linguagens e frameworks modernos. Hoje, me sinto preparado para atuar em diferentes frentes de um projeto, seja no backend ou no frontend, graças à metodologia prática e objetiva que encontrei na Elementar. Recomendo para quem quer se destacar na área!””</p>
               <div class="author">
-                <img src="assets/images/testimonial-author.jpg" alt="">
+                <img src="assets/images/Claude.jpg" alt="">
                 <span class="category">Full Stack Master</span>
                 <h4>Claude David</h4>
               </div>
             </div>
             <div class="item">
-              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid.”</p>
+              <p>“Estudei design de interface e pude imediatamente aplicar o que aprendi em projetos que exigiam criatividade e precisão. A Elementar não só me ofereceu o conhecimento técnico, mas também o apoio para entender o que torna uma interface intuitiva e agradável para o utilizador. ”</p>
               <div class="author">
-                <img src="assets/images/testimonial-author.jpg" alt="">
+                <img src="assets/images/UIdes.jpg" alt="">
                 <span class="category">UI Expert</span>
-                <h4>Thomas Jefferson</h4>
+                <h4>Teresa Jefferson</h4>
               </div>
             </div>
             <div class="item">
-              <p>“Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic quam ducimus nesciunt, laborum, quia, inventore aliquid error iste soluta ab quod qui id ullam est illum. Aliquam, libero optio! Repellat.</p>
+              <p>“A experiência de aprendizado foi dinâmica e prática, com conteúdos atualizados e que atendiam exatamente às necessidades do mercado. A metodologia da Elementar me ajudou a desenvolver habilidades estratégicas e criativas, essenciais para minha função. Graças ao suporte contínuo dos professores e à qualidade dos materiais didáticos, eu pude avançar com segurança, trazendo novos insights e resultados para as redes sociais das marcas com as quais trabalho.”</p>
               <div class="author">
                 <img src="assets/images/testimonial-author.jpg" alt="">
-                <span class="category">Digital Animator</span>
+                <span class="category">Social Media Manager</span>
                 <h4>Stella Blair</h4>
               </div>
             </div>
@@ -584,14 +591,14 @@
           <div class="section-heading">
             <h6>Testemunhos</h6>
             <h2>O que dizem sobre nós</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio inventore labore doloremque ut minima sequi, suscipit facilis neque cum veritatis omnis! Corrupti cumque amet tenetur nesciunt accusantium. Voluptatem, eveniet tempora..</p>
+            <p>A elementar está a conquistar o coração dos estudantes com sua abordagem inovadora e centrada no aluno! 💡💯 Os depoimentos não mentem: desde o suporte contínuo até os materiais didáticos cuidadosamente elaborados, cada detalhe é pensado para potencializar o aprendizado. 📚👩‍🏫 Alunos de todas as áreas, do marketing ao desenvolvimento de software, falam sobre como a Elementar transformou suas habilidades e ampliou suas oportunidades profissionais. 🚀✨ </p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- <div class="section events" id="events">
+  <div class="section events" id="events">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
@@ -698,7 +705,7 @@
         </div>
       </div>
     </div>
-  </div> -->
+  </div>
 
   <div class="contact-us section" id="contact">
     <div class="container">
@@ -707,13 +714,13 @@
           <div class="section-heading">
             <h6>Fale conosco</h6>
             <h2>Sinta-se livre para nos contactar! Não hesite.</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-            <!-- <div class="special-offer">
-              <span class="offer">off<br><em>50%</em></span>
-              <h6>Valide: <em>24 April 2036</em></h6>
-              <h4>Special Offer <em>50%</em> OFF!</h4>
+            <p>Estamos aqui para garantir uma excelente experiência.</p>
+            <div class="special-offer">
+              <span class="offer">off<br><em>30%</em></span>
+              <h6>Validade: <em>31 Dez 2024</em></h6>
+              <h4>Oferta Especial <em>30%</em> DESCONTO!</h4>
               <a href="#"><i class="fa fa-angle-right"></i></a>
-            </div> -->
+            </div>
           </div>
         </div>
         <div class="col-lg-6">
@@ -795,7 +802,7 @@
   <footer>
     <div class="container">
       <div class="col-lg-12">
-        <p>Copyright © 2024 EL3MENTAR@Mz. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="" rel="nofollow" target="_blank">Hr_Chirruta</a> & <a href="" rel="nofollow" target="_blank">M_10</a></p>
+        <p>Copyright © 2024 EL3MENTAR@Mz. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="" rel="nofollow" target="_blank">Hr_Chirruta</a> & <a href="https://github.com/Eng-M10" rel="nofollow" target="_blank">M_10</a></p>
       </div>
     </div>
   </footer>
@@ -808,6 +815,8 @@
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/effects.js"></script>
+  
   <script>
     // Abrir e fechar o painel
     document.getElementById('accessibility-toggle').addEventListener('click', function() {
