@@ -620,22 +620,22 @@
               <div class="row">
                 <div class="col-lg-12">
                   <fieldset>
-                    <input type="name" name="name" id="name" placeholder="Nome..." autocomplete="on" required>
+                    <input type="name" name="name" id="namefield" placeholder="Nome..." autocomplete="on" required>
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-mail..." required="">
+                    <input type="email" name="email" id="emailfield" pattern="[^ @]*@[^ @]*" placeholder="E-mail..." required="">
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <textarea name="message" id="message" placeholder="mensagem..."></textarea>
+                    <textarea name="message" id="messagefield" placeholder="mensagem..."></textarea>
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <button type="submit" id="form-submit" class="orange-button">Enviar mensagem</button>
+                    <button type="button" id="form-submit" " class="orange-button">Enviar mensagem</button>
                   </fieldset>
                 </div>
               </div>
@@ -646,7 +646,7 @@
     </div>
   </div>
  <!-- Whatsapp -->
- <div class="whatsapp-container">
+ <div class="whatsapp-container d-relative" style="z-index:1000">
   <div class="whatsapp-icon">
       <a href="https://wa.me/258845937274" target="_blank">
           <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
@@ -654,40 +654,7 @@
   </div>
 </div>
 
-    
-        <!-- Modal -->
-        <!-- <div id="contactModal" class="modal-overlay">
-            <div class="modal-content">
-                <span class="close-btn" onclick="closeModal()">&times;</span>
-                <h3>Converse com um assistente da EL3MENTAR</h3>
-                <strong><p>Preencha o formulário abaixo e receba nosso contacto personalizado:</p></strong>
-                <form>
-                    <div class="mb-3">
-                        <label for="nome" class="form-label">Seu nome</label>
-                        <input type="text" class="form-control" id="nome" placeholder="Seu nome">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Seu e-mail</label>
-                        <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
-                    </div>
-                    <div class="mb-3">
-                        <label for="telefone" class="form-label">Seu telefone</label>
-                        <div class="input-group">
-                          <span class="input-group-text">
-                            <i class="flag-icon flag-icon-mz" aria-hidden="true"></i> +258
-                        </span>
-                            <input type="text" class="form-control" id="telefone" placeholder="848835520">
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="problema" class="form-label">Sua mensagem...</label>
-                        <textarea class="form-control" id="problema" rows="3" placeholder="Descreva o seu problema"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Solicitar contacto</button>
-                </form>
-            </div>
-        </div> -->
-    
+  
        <!-- Rodape -->
  
   <footer>
@@ -707,6 +674,7 @@
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
   <script src="assets/js/effects.js"></script>
+  <script src="assets/js/mailsender.js"></script>
   
   <script>
     // Abrir e fechar o painel
