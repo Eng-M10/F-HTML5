@@ -1,0 +1,83 @@
+         
+<!-- Botão de acessibilidade para abrir o painel -->
+<button id="accessibility-toggle" class="btn btn-primary accessibility-btn" aria-label="Abrir painel de acessibilidade">Acessibilidade</button>
+
+
+<!-- Painel de Acessibilidade -->
+<div id="accessibility-panel" class="accessibility-panel" role="dialog" aria-labelledby="accessibility-heading">
+    <!-- Botão para fechar o painel -->
+    <button id="close-accessibility-panel" class="close-btn" aria-label="Fechar painel de acessibilidade">×</button>
+    
+    <h2 id="accessibility-heading">Opções de Acessibilidade</h2>
+
+    <!-- Opção para Modo Cego -->
+    <div class="accessibility-option">
+        <h3>Modo Cego</h3>
+        <p>Ativa a navegação por teclado e leitores de tela.</p>
+        <label>
+            <input type="checkbox" id="blind-mode">
+            Ativar
+        </label>
+    </div>
+
+    <!-- Opção para Baixa Visão -->
+    <div class="accessibility-option">
+        <h3>Modo Baixa Visão</h3>
+        <p>Alto contraste e aumento de fontes.</p>
+        <label>
+            <input type="checkbox" id="low-vision-mode">
+            Ativar
+        </label>
+    </div>
+
+    <!-- Opção para aumentar ou diminuir o tamanho da fonte -->
+    <h3>Tamanho da Fonte</h3>
+    <button id="increase-font" aria-label="Aumentar tamanho da fonte">A+</button>
+    <button id="decrease-font" aria-label="Diminuir tamanho da fonte">A-</button>
+
+    <!-- Opção de contraste -->
+    <h3>Contraste</h3>
+    <button id="high-contrast" aria-label="Ativar alto contraste">Alto Contraste</button>
+    <button id="normal-contrast" aria-label="Ativar contraste normal">Contraste Normal</button>
+</div>
+
+<style>
+/* Botão de acessibilidade fixo no lado direito */
+.accessibility-btn {
+    position: fixed;
+    top: 50%; /* Coloca o botão no meio vertical da janela */
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    right: 20px; /* Ajuste de distância da borda direita */
+    z-index: 1000; /* Certifique-se que o botão esteja sobreposto a outros elementos */
+    background-color: #007bff; /* Cor do botão */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accessibility-btn:hover {
+    background-color: #0056b3; /* Cor ao passar o mouse sobre o botão */
+}
+
+/* Painel de acessibilidade */
+.accessibility-panel {
+    /* Os mesmos estilos já aplicados anteriormente */
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    z-index: 1000;
+    display: none; /* O painel começa oculto */
+    border-radius: 8px;
+}
+
+
+</style>
+                    <!-- ***** Accessibility Toggle End ***** -->

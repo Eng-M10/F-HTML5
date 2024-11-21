@@ -2003,3 +2003,7 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(14px);
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2a70869df3a258b9c8c6c9b1f5da322ba861815b
