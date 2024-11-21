@@ -139,7 +139,7 @@ body {
 }
 
 .section-heading h2 {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   text-transform: capitalize;
   margin: 20px 0;
@@ -1905,4 +1905,101 @@ body {
   .fun-facts:before {
     width: 95%;
   }
+}
+
+/* Estilos para o botão de acessibilidade */
+.accessibility-button {
+  background-color: #008080;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 120px;
+  top: 20px;
+}
+
+.accessibility-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.accessibility-enabled .main-nav,
+.accessibility-enabled body {
+  background-color: #fff !important; /* Simular modo alto contraste */
+  color: #000 !important; /* Texto mais visível */
+}
+
+/* Painel de acessibilidade */
+.accessibility-panel {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 300px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.accessibility-panel h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.accessibility-option {
+  margin-bottom: 15px;
+}
+
+.accessibility-option h3 {
+  font-size: 18px;
+}
+
+.accessibility-option p {
+  font-size: 14px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 10px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
 }
