@@ -40,6 +40,18 @@
     new window.VLibras.Widget('https://vlibras.gov.br/app');
   </script>
 
+<!-- Conteúdo da página -->
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
   <!-- ***** Preloader Start ***** -->
   <div id="js-preloader" class="js-preloader">
     <div class="preloader-inner">
@@ -65,87 +77,155 @@
                     <!-- ***** Logo End ***** -->
                     
                     <!-- ***** Accessibility Toggle Start ***** -->
- <!-- Botão de acessibilidade para abrir o painel -->
 <!-- Botão de acessibilidade para abrir o painel -->
-<button id="accessibility-toggle" class="btn btn-primary accessibility-btn d-relative z-index-1000" aria-label="Abrir painel de acessibilidade"><i class="fa fa-universal-access" aria-hidden="true"></i></button>
+<!-- Botão de Acessibilidade -->
+<!-- Botão de Acessibilidade -->
+<button id="accessibility-toggle" class="btn accessibility-btn" aria-label="Abrir painel de acessibilidade">
+  <i class="fa fa-universal-access" aria-hidden="true"></i>
+</button>
 
 <!-- Painel de Acessibilidade -->
-<div id="accessibility-panel" class="accessibility-panel" role="dialog" aria-labelledby="accessibility-heading">
-    <!-- Botão para fechar o painel -->
-    <button id="close-accessibility-panel" class="close-btn" aria-label="Fechar painel de acessibilidade">×</button>
-    
-    <h2 id="accessibility-heading">Opções de Acessibilidade</h2>
+<div id="accessibility-panel" class="accessibility-panel" role="dialog" aria-labelledby="accessibility-heading" aria-hidden="true">
+  <!-- Botão para fechar o painel -->
+  <button id="close-accessibility-panel" class="close-btn" aria-label="Fechar painel de acessibilidade">×</button>
+  
+  <h2 id="accessibility-heading" class="accessibility-title">Opções de Acessibilidade</h2>
 
-    <!-- Opção para Modo Cego -->
-    <div class="accessibility-option">
-        <h3>Modo Cego</h3>
-        <p>Ativa a navegação por teclado e leitores de tela.</p>
-        <label>
-            <input type="checkbox" id="blind-mode">
-            Ativar
-        </label>
-    </div>
+  <!-- Modo Cego -->
+  <div class="accessibility-option">
+      <h3>Modo Cego</h3>
+      <p>Navegação por teclado e leitores de tela.</p>
+      <label class="switch">
+          <input type="checkbox" id="blind-mode" aria-checked="false">
+          <span class="slider"></span>
+      </label>
+  </div>
 
-    <!-- Opção para Baixa Visão -->
-    <div class="accessibility-option">
-        <h3>Modo Baixa Visão</h3>
-        <p>Alto contraste e aumento de fontes.</p>
-        <label>
-            <input type="checkbox" id="low-vision-mode">
-            Ativar
-        </label>
-    </div>
+  <!-- Baixa Visão -->
+  <div class="accessibility-option">
+      <h3>Modo Baixa Visão</h3>
+      <p>Ativar alto contraste e fontes maiores.</p>
+      <label class="switch">
+          <input type="checkbox" id="low-vision-mode" aria-checked="false">
+          <span class="slider"></span>
+      </label>
+  </div>
 
-    <!-- Opção para aumentar ou diminuir o tamanho da fonte -->
-    <h3>Tamanho da Fonte</h3>
-    <button id="increase-font" aria-label="Aumentar tamanho da fonte">A+</button>
-    <button id="decrease-font" aria-label="Diminuir tamanho da fonte">A-</button>
+  <!-- Controle de Fonte -->
+  <div class="font-options">
+      <h3>Tamanho da Fonte</h3>
+      <div>
+          <button id="increase-font" class="btn btn-secondary" aria-label="Aumentar tamanho da fonte">A+</button>
+          <button id="decrease-font" class="btn btn-secondary" aria-label="Diminuir tamanho da fonte">A-</button>
+      </div>
+  </div>
 
-    <!-- Opção de contraste -->
-    <h3>Contraste</h3>
-    <button id="high-contrast" aria-label="Ativar alto contraste">Alto Contraste</button>
-    <button id="normal-contrast" aria-label="Ativar contraste normal">Contraste Normal</button>
+  <!-- Contraste -->
+  <div class="contrast-options">
+      <h3>Contraste</h3>
+      <div>
+          <button id="high-contrast" class="btn btn-dark" aria-label="Ativar alto contraste">Alto Contraste</button>
+          <button id="normal-contrast" class="btn btn-light" aria-label="Ativar contraste normal">Contraste Normal</button>
+      </div>
+  </div>
 </div>
 
 <style>
-/* Botão de acessibilidade fixo no lado direito */
+/* Botão de Acessibilidade */
 .accessibility-btn {
-    position: fixed;
-    top: 50%; /* Coloca o botão no meio vertical da janela */
-    transform: translateY(-50%); /* Centraliza verticalmente */
-    right: 20px; /* Ajuste de distância da borda direita */
-    z-index: 1000; /* Certifique-se que o botão esteja sobreposto a outros elementos */
-    background-color: #007bff; /* Cor do botão */
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
 }
 
 .accessibility-btn:hover {
-    background-color: #0056b3; /* Cor ao passar o mouse sobre o botão */
+  background-color: #0056b3;
 }
 
-/* Painel de acessibilidade */
+/* Painel de Acessibilidade */
 .accessibility-panel {
-    /* Os mesmos estilos já aplicados anteriormente */
-    position: fixed;
-    top: 60px;
-    right: 20px;
-    width: 300px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    z-index: 1000;
-    display: none; /* O painel começa oculto */
-    border-radius: 8px;
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  width: 320px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  display: none;
+  z-index: 1000;
 }
 
+.accessibility-panel[aria-hidden="false"] {
+  display: block;
+}
 
+.accessibility-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Switch para os Modos */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #007bff;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
 </style>
+
+
                     <!-- ***** Accessibility Toggle End ***** -->
                     
                     <!-- ***** Menu Start ***** -->
@@ -182,9 +262,22 @@
                     <a href="#contact-form">Requisitar Demonstração</a>
                   </div>
                   <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i>O que é a El3mentar?</a>
+                    <a id="openVideo"><i class="fa fa-play"></i> O que é a Elementar?</a>
                   </div>
                 </div>
+                
+                <!-- Modal para o vídeo -->
+                <div id="videoModal" class="modal" style="display: none;"> <!-- Começa escondido -->
+                  <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <video controls>
+                      <source src="assets/video/ilustracao.mp4" type="video/mp4">
+                      Seu navegador não suporta vídeos HTML5.
+                    </video>
+                  </div>
+                </div>
+                
+                
               </div>
             </div>
             <div class="item item-2">
@@ -439,7 +532,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
+        <!-- <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
           <div class="events_item">
             <div class="thumb">
               <a href="#"><img src="assets/images/Build Your First Full-Stack Web App in Just 7 Days!.jpg" alt=""></a>
@@ -451,7 +544,7 @@
               <h4>Full Stack Developer</h4>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -611,7 +704,7 @@
               <h6>Validade: <em>31 Dez 2024</em></h6>
               <h4>Oferta Especial <em>30%</em> DESCONTO!</h4>
               <a href="#"><i class="fa fa-angle-right"></i></a>
-            </div>
+            </div> 
           </div>
         </div>
         <div class="col-lg-6">
@@ -676,7 +769,7 @@
   <script src="assets/js/effects.js"></script>
   <script src="assets/js/mailsender.js"></script>
   
-  <script>
+  <!-- <script>
     // Abrir e fechar o painel
     document.getElementById('accessibility-toggle').addEventListener('click', function() {
         var panel = document.getElementById('accessibility-panel');
@@ -739,8 +832,81 @@
     document.getElementById('normal-contrast').addEventListener('click', function() {
         document.body.classList.remove('high-contrast');
     });
-</script>
+</script> -->
  <!-- JavaScript -->
+ <script>document.addEventListener("DOMContentLoaded", function () {
+  const toggleButton = document.getElementById("accessibility-toggle");
+  const panel = document.getElementById("accessibility-panel");
+  const closeButton = document.getElementById("close-accessibility-panel");
+
+  // Abrir e fechar painel
+  toggleButton.addEventListener("click", function () {
+      const isHidden = panel.getAttribute("aria-hidden") === "true";
+      panel.setAttribute("aria-hidden", !isHidden);
+      if (!isHidden) {
+          panel.focus();
+      }
+  });
+
+  closeButton.addEventListener("click", function () {
+      panel.setAttribute("aria-hidden", "true");
+  });
+
+  // Modo Cego
+  document.getElementById("blind-mode").addEventListener("change", function (e) {
+      const isChecked = e.target.checked;
+      document.body.style.outline = isChecked ? "5px dashed #007bff" : "none";
+      alertOrSpeak(isChecked ? "Modo cego ativado" : "Modo cego desativado");
+  });
+
+  // Modo Baixa Visão
+  document.getElementById("low-vision-mode").addEventListener("change", function (e) {
+      const isChecked = e.target.checked;
+      document.body.style.fontSize = isChecked ? "1.5rem" : "";
+      document.body.style.backgroundColor = isChecked ? "#000" : "";
+      document.body.style.color = isChecked ? "#fff" : "";
+      alertOrSpeak(isChecked ? "Modo baixa visão ativado" : "Modo baixa visão desativado");
+  });
+
+  // Controle de Fonte
+  document.getElementById("increase-font").addEventListener("click", function () {
+      adjustFontSize("increase");
+  });
+
+  document.getElementById("decrease-font").addEventListener("click", function () {
+      adjustFontSize("decrease");
+  });
+
+  // Contraste
+  document.getElementById("high-contrast").addEventListener("click", function () {
+      document.body.style.backgroundColor = "#000";
+      document.body.style.color = "#fff";
+      alertOrSpeak("Alto contraste ativado");
+  });
+
+  document.getElementById("normal-contrast").addEventListener("click", function () {
+      document.body.style.backgroundColor = "";
+      document.body.style.color = "";
+      alertOrSpeak("Contraste normal ativado");
+  });
+
+  // Ajustar Fonte
+  function adjustFontSize(action) {
+      const html = document.documentElement;
+      const currentSize = parseFloat(getComputedStyle(html).fontSize);
+      const newSize = action === "increase" ? currentSize * 1.1 : currentSize * 0.9;
+      html.style.fontSize = `${newSize}px`;
+  }
+
+  // Feedback por áudio ou texto
+  function alertOrSpeak(message) {
+      alert(message);
+      const utterance = new SpeechSynthesisUtterance(message);
+      utterance.lang = "pt-PT";
+      window.speechSynthesis.speak(utterance);
+  }
+});
+</script>
  <script src="script.js"></script>
  <script>
      // Função para abrir o modal
@@ -754,6 +920,31 @@ function closeModal() {
 }
 
  </script>
+ <script>
+  // Selecionar os elementos
+  const modal = document.getElementById("videoModal");
+  const openButton = document.getElementById("openVideo");
+  const closeButton = document.querySelector(".close");
+
+  // Abrir o modal ao clicar no botão
+  openButton.addEventListener("click", (event) => {
+    event.preventDefault(); 
+    modal.style.display = "flex"; // Torna o modal visível
+  });
+
+  // Fechar o modal ao clicar no botão "X"
+  closeButton.addEventListener("click", () => {
+    modal.style.display = "none"; // Esconde o modal
+  });
+
+  // Fechar o modal ao clicar fora do conteúdo
+  window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
+
 
   </body>
 </html>
