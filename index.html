@@ -19,28 +19,13 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet">
-
 
   </head>
 
 <body>
-  <!-- Inicio do corpo da página -->
+<!-- Inicio do corpo da página -->
 
-  <!-- Conteúdo da página -->
-
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
-
-<!-- Conteúdo da página -->
+... <!-- Conteúdo da página -->
 
 <div vw class="enabled">
   <div vw-access-button class="active"></div>
@@ -77,155 +62,9 @@
                     <!-- ***** Logo End ***** -->
                     
                     <!-- ***** Accessibility Toggle Start ***** -->
-<!-- Botão de acessibilidade para abrir o painel -->
-<!-- Botão de Acessibilidade -->
-<!-- Botão de Acessibilidade -->
-<button id="accessibility-toggle" class="btn accessibility-btn" aria-label="Abrir painel de acessibilidade">
-  <i class="fa fa-universal-access" aria-hidden="true"></i>
-</button>
-
-<!-- Painel de Acessibilidade -->
-<div id="accessibility-panel" class="accessibility-panel" role="dialog" aria-labelledby="accessibility-heading" aria-hidden="true">
-  <!-- Botão para fechar o painel -->
-  <button id="close-accessibility-panel" class="close-btn" aria-label="Fechar painel de acessibilidade">×</button>
-  
-  <h2 id="accessibility-heading" class="accessibility-title">Opções de Acessibilidade</h2>
-
-  <!-- Modo Cego -->
-  <div class="accessibility-option">
-      <h3>Modo Cego</h3>
-      <p>Navegação por teclado e leitores de tela.</p>
-      <label class="switch">
-          <input type="checkbox" id="blind-mode" aria-checked="false">
-          <span class="slider"></span>
-      </label>
-  </div>
-
-  <!-- Baixa Visão -->
-  <div class="accessibility-option">
-      <h3>Modo Baixa Visão</h3>
-      <p>Ativar alto contraste e fontes maiores.</p>
-      <label class="switch">
-          <input type="checkbox" id="low-vision-mode" aria-checked="false">
-          <span class="slider"></span>
-      </label>
-  </div>
-
-  <!-- Controle de Fonte -->
-  <div class="font-options">
-      <h3>Tamanho da Fonte</h3>
-      <div>
-          <button id="increase-font" class="btn btn-secondary" aria-label="Aumentar tamanho da fonte">A+</button>
-          <button id="decrease-font" class="btn btn-secondary" aria-label="Diminuir tamanho da fonte">A-</button>
-      </div>
-  </div>
-
-  <!-- Contraste -->
-  <div class="contrast-options">
-      <h3>Contraste</h3>
-      <div>
-          <button id="high-contrast" class="btn btn-dark" aria-label="Ativar alto contraste">Alto Contraste</button>
-          <button id="normal-contrast" class="btn btn-light" aria-label="Ativar contraste normal">Contraste Normal</button>
-      </div>
-  </div>
-</div>
-
-<style>
-/* Botão de Acessibilidade */
-.accessibility-btn {
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 20px;
-  background-color: #007bff;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  z-index: 1000;
-  font-size: 1.5rem;
-  transition: all 0.3s ease;
-}
-
-.accessibility-btn:hover {
-  background-color: #0056b3;
-}
-
-/* Painel de Acessibilidade */
-.accessibility-panel {
-  position: fixed;
-  top: 60px;
-  right: 20px;
-  width: 320px;
-  background-color: white;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  border-radius: 10px;
-  display: none;
-  z-index: 1000;
-}
-
-.accessibility-panel[aria-hidden="false"] {
-  display: block;
-}
-
-.accessibility-title {
-  font-size: 1.25rem;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-/* Switch para os Modos */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 20px;
-}
-
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 20px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 14px;
-  width: 14px;
-  left: 3px;
-  bottom: 3px;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 50%;
-}
-
-input:checked + .slider {
-  background-color: #007bff;
-}
-
-input:checked + .slider:before {
-  transform: translateX(20px);
-}
-</style>
-
-
+                    <!-- <button id="accessibility-toggle" aria-label="Ativar Acessibilidade" class="accessibility-button">
+                        <img src="assets/images/accessibility-icon.png" alt="Acessibilidade">
+                    </button> -->
                     <!-- ***** Accessibility Toggle End ***** -->
                     
                     <!-- ***** Menu Start ***** -->
@@ -262,50 +101,37 @@ input:checked + .slider:before {
                     <a href="#">Requisitar Demonstração</a>
                   </div>
                   <div class="icon-button">
-                    <a id="openVideo"><i class="fa fa-play"></i> O que é a Elementar?</a>
+                    <a href="#"><i class="fa fa-play"></i>O que é a El3mentar?</a>
                   </div>
                 </div>
-                
-                <!-- Modal para o vídeo -->
-                <div id="videoModal" class="modal" style="display: none;"> <!-- Começa escondido -->
-                  <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <video controls>
-                      <source src="assets/video/ilustracao.mp4" type="video/mp4">
-                      Seu navegador não suporta vídeos HTML5.
-                    </video>
-                  </div>
-                </div>
-                
-                
               </div>
             </div>
             <div class="item item-2">
               <div class="header-text">
-                <span class="category">Os melhores resultados</span>
-                <h2>Obtemos junto com os nossos clientes os melhores resultados!</h2>
-                <p>Estamos dedicados a fornecer suporte educacional de qualidade para ajudar alunos a alcançarem melhores resultados acadêmicos.</p>
+                <span class="category">Best Result</span>
+                <h2>Get the best result out of your effort</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur voluptate natus ea quae vero quisquam, dignissimos a necessitatibus cupiditate officia beatae eaque qui tenetur perspiciatis mollitia, inventore corrupti esse.</p>
                 <div class="buttons">
                   <div class="main-button">
-                    <a href="#">Requisitar Demonstração</a>
+                    <a href="#">Request Demo</a>
                   </div>
                   <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> O que é a Elementar?</a>
+                    <a href="#"><i class="fa fa-play"></i> What's the best result?</a>
                   </div>
                 </div>
               </div>
             </div>
             <div class="item item-3">
               <div class="header-text">
-                <span class="category">Mobilidade</span>
-                <h2>Ajudamos-te onde estiver!</h2>
-                <p>Oferecemos um acesso a conteúdos didáticos de qualidade e exercícios práticos de forma digital, os nossos alunos podem estudar onde e quando quiserem, transformando qualquer lugar em um espaço de aprendizado.</p>
+                <span class="category">Online Learning</span>
+                <h2>Online Learning helps you save the time</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporious incididunt ut labore et dolore magna aliqua suspendisse.</p>
                 <div class="buttons">
                   <div class="main-button">
-                    <a href="#">Requisitar Demonstração</a>
+                    <a href="#">Request Demo</a>
                   </div>
                   <div class="icon-button">
-                    <a href="#"><i class="fa fa-play"></i> O que é a Elementar?</a>
+                    <a href="#"><i class="fa fa-play"></i> What's Online Course?</a>
                   </div>
                 </div>
               </div>
@@ -326,11 +152,9 @@ input:checked + .slider:before {
             </div>
             <div class="main-content">
               <h4>Aulas presenciais</h4>
-              <p>Para alunos que buscam uma experiência de aprendizado mais interativa e personalizada, oferecemos aulas presenciais.</p>
-              <span class="treedots" >...</span>
-              <p class="paragrafo-hidden" style="display: none;">Nestas aulas, os alunos podem contar com o apoio direto de professores experientes, tirar dúvidas em tempo real e participar de discussões enriquecedoras que aprofundam o entendimento das matérias. O ambiente presencial favorece a troca de ideias e o desenvolvimento de habilidades sociais, criando um espaço propício para uma aprendizagem colaborativa e motivadora.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae et nesciunt, blanditiis ipsam, repellat id nulla incidunt in doloribus nam a cum. At vel atque ea id? Sapiente, aperiam assumenda!</p>
               <div class="main-button">
-                <a href="#" onclick="toggleContent(event)">Ver mais</a>
+                <a href="#">Ver mais</a>
               </div>
             </div>
           </div>
@@ -342,11 +166,9 @@ input:checked + .slider:before {
             </div>
             <div class="main-content">
               <h4>Cursos de curta duração</h4>
-              <p>Para alunos que desejam adquirir novos conhecimentos de forma rápida e focada.</p>
-              <span class="treedots" >...</span>
-              <p class="paragrafo-hidden" style="display: none;"> Os nossos cursos são estruturados para abordar tópicos específicos e fornecer habilidades práticas e aplicáveis em um curto período, atendendo às necessidades de quem busca aprender de maneira objetiva e eficiente.  Com uma abordagem direcionada e instrutores experientes, os cursos de curta duração da Elementar permitem que os alunos complementem sua formação, atualizem conhecimentos e se preparem para desafios acadêmicos e profissionais em pouco tempo, mantendo a flexibilidade de horários e o foco no que realmente importa para cada área de interesse.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum libero porro, Totam!</p>
               <div class="main-button">
-                <a href="#" onclick="toggleContent(event)">Ver mais</a>
+                <a href="#">Ver mais</a>
               </div>
             </div>
           </div>
@@ -358,11 +180,9 @@ input:checked + .slider:before {
             </div>
             <div class="main-content">
               <h4>Material didático.</h4>
-              <p>Para facilitar o entendimento dos alunos, fornecemos materiais didáticos de alta qualidade, cuidadosamente desenvolvidos.</p>
-              <span class="treedots">...</span>
-              <p class="paragrafo-hidden" style="display: none;">Cada material é estruturado de forma prática e objetiva, com conteúdos atualizados e organizados para reforçar os conceitos-chave e estimular a aplicação do conhecimento. Além disso, esses materiais incluem exercícios práticos, resumos, exemplos e guias passo a passo que ajudam os estudantes a fixar os conteúdos de forma eficiente. Com recursos acessíveis e adaptados às diferentes necessidades de cada disciplina, a Elementar garante que seus materiais didáticos sejam uma ferramenta valiosa para o aprendizado contínuo e o sucesso acadêmico dos alunos.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit atque nostrum amet ipsam perspiciatis in ab maxime iste quae ut illo.</p>
               <div class="main-button">
-                <a href="#" onclick="toggleContent(event)">Ver mais</a>
+                <a href="#">Ver mais</a>
               </div>
             </div>
           </div>
@@ -379,48 +199,48 @@ input:checked + .slider:before {
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Por onde começar?
+                  Where shall we begin?
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <p>Uma avaliação inicial para identificar o <strong>nível de conhecimento</strong> e as áreas que precisam de mais atenção. Com base nesse diagnóstico, os estudantes recebem uma orientação personalizada para escolher os cursos e materiais mais adequados às suas metas acadêmicas.</p>
+                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Como trabalham?
+                  How do we work together?
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <p>Aqui trabalhamos com foco total na experiência e nos resultados dos nossos alunos.</p>
+                  Dolor <strong>almesit amet</strong>, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur <code>adipiscing</code> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Porque escolher a Elementar?
+                  Why SCHOLAR is the best?
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                 <p>Escolher-nos é optar por uma experiência de aprendizado completa, personalizada e de alta qualidade. Na Elementar, os alunos têm acesso a um método de ensino que combina flexibilidade e foco em resultados, com opções de cursos online, aulas presenciais e materiais didáticos elaborados para facilitar a compreensão e a prática.</p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.<strong>Lorem</strong>Elementar website. You can browse by different tags or categories.
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Recebemos o melhor suporte?
+                  Do we get the best support?
                 </button>
               </h2>
               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <p>O suporte ao aluno é uma prioridade. Nossa equipe de tutores e professores está sempre disponível para responder dúvidas, oferecer orientação e acompanhar o progresso de cada estudante. O suporte inclui atendimento individualizado, seja presencialmente ou online, além de recursos como fóruns de discussão e sessões de monitoria para reforçar o entendimento dos conteúdos. Esse apoio contínuo ajuda os alunos a superarem desafios, revisarem conceitos e seguirem no ritmo mais adequado para o seu aprendizado.</p>
+                  Lorem ipsum <code>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex incidunt modi quibusdam, assumenda corrupti maxime. Facere aut obcaecati excepturi id suscipit adipisci pariatur explicabo repellendus. Possimus earum eum quo autem..</code>
                 </div>
               </div>
             </div>
@@ -430,11 +250,9 @@ input:checked + .slider:before {
           <div class="section-heading">
             <h6>Sobre nós</h6>
             <h2>Porque que temos a certeza de que somos a sua melhor opção?</h2>
-            <p>
-              Na Elementar, combinamos excelência acadêmica com um atendimento personalizado, sempre focado nas necessidades e objetivos individuais de cada aluno. Nosso compromisso é oferecer uma educação acessível, dinâmica e eficiente, unindo o melhor dos métodos tradicionais e das tecnologias educacionais.
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p>
             <div class="main-button">
-              <a href="https://www.facebook.com/profile.php?id=100064129233326" target="_blank">Descubra Mais</a>
+              <a href="#">Discover More</a>
             </div>
           </div>
         </div>
@@ -470,12 +288,12 @@ input:checked + .slider:before {
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/WebDesigning.jpg" alt=""></a>
+              <a href="#"><img src="assets/images/course-01.png" alt=""></a>
               <span class="category">Webdesign</span>
-              <span class="price"><h6><em></em>1600</h6></span>
+              <span class="price"><h6><em></em>1600MZN</h6></span>
             </div>
             <div class="down-content">
-              <span class="author">Cristiano Paulo</span>
+              <span class="author">Coach_Ghost</span>
               <h4>Tudo sobre Web Design</h4>
             </div>
           </div>
@@ -483,12 +301,12 @@ input:checked + .slider:before {
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  development">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/DedicatedDeveloper.jpg" height="300px" alt=""></a>
+              <a href="#"><img src="assets/images/course-02.png" alt=""></a>
               <span class="category">Development</span>
-              <span class="price"><h6><em></em>3400</h6></span>
+              <span class="price"><h6><em></em>3400MZN</h6></span>
             </div>
             <div class="down-content">
-              <span class="author">Mauro Cossa</span>
+              <span class="author">M_10</span>
               <h4>Web Development</h4>
             </div>
           </div>
@@ -496,12 +314,12 @@ input:checked + .slider:before {
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design wordpress">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/DigitalMarketing.gif"  alt=""></a>
-              <span class="category">Marketing Digital</span>
+              <a href="#"><img src="assets/images/course-03.png" alt=""></a>
+              <span class="category">Wordpress</span>
               <span class="price"><h6><em></em>2400</h6></span>
             </div>
             <div class="down-content">
-              <span class="author">Sinmi Williams </span>
+              <span class="author">Hutson</span>
               <h4>Web Trends</h4>
             </div>
           </div>
@@ -509,25 +327,25 @@ input:checked + .slider:before {
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/MSOffice.jpg"  height="300px" alt=""></a>
+              <a href="#"><img src="assets/images/course-04.png" alt=""></a>
               <span class="category">Development</span>
               <span class="price"><h6><em></em>4500</h6></span>
             </div>
             <div class="down-content">
-              <span class="author">Keith Powers</span>
-              <h4>O pacote Office</h4>
+              <span class="author">Taylor</span>
+              <h4>Online</h4>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress development">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/wordpress.jpg" alt=""></a>
+              <a href="#"><img src="assets/images/course-05.png" alt=""></a>
               <span class="category">Wordpress</span>
-              <span class="price"><h6><em></em>3200</h6></span>
+              <span class="price"><h6><em></em>3200MZN</h6></span>
             </div>
             <div class="down-content">
-              <span class="author">Rafael Munguambe</span>
+              <span class="author">Roger</span>
               <h4>Mestre do WordPress</h4>
             </div>
           </div>
@@ -535,7 +353,7 @@ input:checked + .slider:before {
         <!-- <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/images/Build Your First Full-Stack Web App in Just 7 Days!.jpg" alt=""></a>
+              <a href="#"><img src="assets/images/course-06.png" alt=""></a>
               <span class="category">Webdesign</span>
               <span class="price"><h6><em></em>2400MZN</h6></span>
             </div>
@@ -592,9 +410,9 @@ input:checked + .slider:before {
         <div class="col-lg-3 col-md-6">
           <div class="team-member">
             <div class="main-content">
-              <img src="assets/images/preto-1.jpg" height="250px"  alt="">
-              <span class="category">Professor de Programação</span>
-              <h4>Mauro Cossa</h4>
+              <img src="assets/images/member-01.png" alt="">
+              <span class="category">UX Teacher</span>
+              <h4>Coach_Ghost</h4>
               <ul class="social-icons">
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -606,9 +424,9 @@ input:checked + .slider:before {
         <div class="col-lg-3 col-md-6">
           <div class="team-member">
             <div class="main-content">
-              <img src="assets/images/Jonathan Majors_.jpg" height="250px" alt="">
-              <span class="category">Professor de Design Gráfico</span>
-              <h4>Jonathan Majors</h4>
+              <img src="assets/images/member-02.png" alt="">
+              <span class="category">Graphic Teacher</span>
+              <h4>M_10</h4>
               <ul class="social-icons">
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -620,9 +438,9 @@ input:checked + .slider:before {
         <div class="col-lg-3 col-md-6">
           <div class="team-member">
             <div class="main-content">
-              <img src="assets/images/Keith powers.jpg" height="250px"  alt="">
-              <span class="category">Pacote Microsoft Office Master</span>
-              <h4>Keith Powers</h4>
+              <img src="assets/images/member-03.png" alt="">
+              <span class="category">Full Stack Master</span>
+              <h4>David Hutson</h4>
               <ul class="social-icons">
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -634,9 +452,9 @@ input:checked + .slider:before {
         <div class="col-lg-3 col-md-6">
           <div class="team-member">
             <div class="main-content">
-              <img src="assets/images/sinmi.jpg" height="250px" alt="">
-              <span class="category">Professora de Marketing Digital </span>
-              <h4>Sinmi Williams </h4>
+              <img src="assets/images/member-04.png" alt="">
+              <span class="category">Digital Animator</span>
+              <h4>Stella Blair</h4>
               <ul class="social-icons">
                 <li><a href="#"><i class="fab fa-facebook"></i></a></li>
                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -655,26 +473,26 @@ input:checked + .slider:before {
         <div class="col-lg-7">
           <div class="owl-carousel owl-testimonials">
             <div class="item">
-              <p>“ O suporte dos instrutores e os materiais didáticos foram fundamentais para eu adquirir segurança em linguagens e frameworks modernos. Hoje, me sinto preparado para atuar em diferentes frentes de um projeto, seja no backend ou no frontend, graças à metodologia prática e objetiva que encontrei na Elementar. Recomendo para quem quer se destacar na área!””</p>
+              <p>“Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iste recusandae error consectetur, temporibus ea explicabo, eius corporis quisquam assumenda minima porro voluptatibus dolor reprehenderit nihil rerum quae nam non..”</p>
               <div class="author">
-                <img src="assets/images/Claude.jpg" alt="">
+                <img src="assets/images/testimonial-author.jpg" alt="">
                 <span class="category">Full Stack Master</span>
                 <h4>Claude David</h4>
               </div>
             </div>
             <div class="item">
-              <p>“Estudei design de interface e pude imediatamente aplicar o que aprendi em projetos que exigiam criatividade e precisão. A Elementar não só me ofereceu o conhecimento técnico, mas também o apoio para entender o que torna uma interface intuitiva e agradável para o utilizador. ”</p>
+              <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid.”</p>
               <div class="author">
-                <img src="assets/images/UIdes.jpg" alt="">
+                <img src="assets/images/testimonial-author.jpg" alt="">
                 <span class="category">UI Expert</span>
-                <h4>Teresa Jefferson</h4>
+                <h4>Thomas Jefferson</h4>
               </div>
             </div>
             <div class="item">
-              <p>“A experiência de aprendizado foi dinâmica e prática, com conteúdos atualizados e que atendiam exatamente às necessidades do mercado. A metodologia da Elementar me ajudou a desenvolver habilidades estratégicas e criativas, essenciais para minha função. Graças ao suporte contínuo dos professores e à qualidade dos materiais didáticos, eu pude avançar com segurança, trazendo novos insights e resultados para as redes sociais das marcas com as quais trabalho.”</p>
+              <p>“Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic quam ducimus nesciunt, laborum, quia, inventore aliquid error iste soluta ab quod qui id ullam est illum. Aliquam, libero optio! Repellat.</p>
               <div class="author">
                 <img src="assets/images/testimonial-author.jpg" alt="">
-                <span class="category">Social Media Manager</span>
+                <span class="category">Digital Animator</span>
                 <h4>Stella Blair</h4>
               </div>
             </div>
@@ -684,7 +502,116 @@ input:checked + .slider:before {
           <div class="section-heading">
             <h6>Testemunhos</h6>
             <h2>O que dizem sobre nós</h2>
-            <p>A elementar está a conquistar o coração dos estudantes com sua abordagem inovadora e centrada no aluno! 💡💯 Os depoimentos não mentem: desde o suporte contínuo até os materiais didáticos cuidadosamente elaborados, cada detalhe é pensado para potencializar o aprendizado. 📚👩‍🏫 Alunos de todas as áreas, do marketing ao desenvolvimento de software, falam sobre como a Elementar transformou suas habilidades e ampliou suas oportunidades profissionais. 🚀✨ </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio inventore labore doloremque ut minima sequi, suscipit facilis neque cum veritatis omnis! Corrupti cumque amet tenetur nesciunt accusantium. Voluptatem, eveniet tempora..</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section events" id="events">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <div class="section-heading">
+            <h6>Schedule</h6>
+            <h2>Eventos passados</h2>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="assets/images/event-01.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">Web Design</span>
+                    <h4>Boas Praticas de Design</h4>
+                  </li>
+                  <li>
+                    <span>Date:</span>
+                    <h6>16 Feb 2024</h6>
+                  </li>
+                  <li>
+                    <span>Duração:</span>
+                    <h6>22 Hours</h6>
+                  </li>
+                  <li>
+                    <span>Preço:</span>
+                    <h6>1200MZN</h6>
+                  </li>
+                </ul>
+                <a href="#"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="assets/images/event-02.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">Front End</span>
+                    <h4>New Design</h4>
+                  </li>
+                  <li>
+                    <span>Date:</span>
+                    <h6>24 Feb 2036</h6>
+                  </li>
+                  <li>
+                    <span>Duração</span>
+                    <h6>30 Hours</h6>
+                  </li>
+                  <li>
+                    <span>Preço:</span>
+                    <h6>3200MZN</h6>
+                  </li>
+                </ul>
+                <a href="#"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6">
+          <div class="item">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="image">
+                  <img src="assets/images/event-03.jpg" alt="">
+                </div>
+              </div>
+              <div class="col-lg-9">
+                <ul>
+                  <li>
+                    <span class="category">Full Stack</span>
+                    <h4>Web Programming</h4>
+                  </li>
+                  <li>
+                    <span>Date:</span>
+                    <h6>12 Mar 2036</h6>
+                  </li>
+                  <li>
+                    <span>Duração</span>
+                    <h6>48 Hours</h6>
+                  </li>
+                  <li>
+                    <span>Preço</span>
+                    <h6>4400MZN</h6>
+                  </li>
+                </ul>
+                <a href="#"><i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -698,13 +625,13 @@ input:checked + .slider:before {
           <div class="section-heading">
             <h6>Fale conosco</h6>
             <h2>Sinta-se livre para nos contactar! Não hesite.</h2>
-            <p>Estamos aqui para garantir uma excelente experiência.</p>
-            <div class="special-offer">
-              <span class="offer">off<br><em>30%</em></span>
-              <h6>Validade: <em>31 Dez 2024</em></h6>
-              <h4>Oferta Especial <em>30%</em> DESCONTO!</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <!-- <div class="special-offer">
+              <span class="offer">off<br><em>50%</em></span>
+              <h6>Valide: <em>24 April 2036</em></h6>
+              <h4>Special Offer <em>50%</em> OFF!</h4>
               <a href="#"><i class="fa fa-angle-right"></i></a>
-            </div> 
+            </div> -->
           </div>
         </div>
         <div class="col-lg-6">
@@ -713,22 +640,22 @@ input:checked + .slider:before {
               <div class="row">
                 <div class="col-lg-12">
                   <fieldset>
-                    <input type="name" name="name" id="namefield" placeholder="Nome..." autocomplete="on" required>
+                    <input type="name" name="name" id="name" placeholder="Nome..." autocomplete="on" required>
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <input type="email" name="email" id="emailfield" pattern="[^ @]*@[^ @]*" placeholder="E-mail..." required="">
+                    <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="E-mail..." required="">
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <textarea name="message" id="messagefield" placeholder="mensagem..."></textarea>
+                    <textarea name="message" id="message" placeholder="mensagem..."></textarea>
                   </fieldset>
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                    <button type="button" id="form-submit" " class="orange-button">Enviar mensagem</button>
+                    <button type="submit" id="form-submit" class="orange-button">Enviar mensagem</button>
                   </fieldset>
                 </div>
               </div>
@@ -738,22 +665,47 @@ input:checked + .slider:before {
       </div>
     </div>
   </div>
- <!-- Whatsapp -->
- <div class="whatsapp-container d-relative" style="z-index:1000">
-  <div class="whatsapp-icon">
-      <a href="https://wa.me/258845937274" target="_blank">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-      </a>
-  </div>
-</div>
+  <!--Detalhes de acessibilidade-->
+  <!-- <div id="accessibility-panel" class="accessibility-panel">
+    <button id="close-accessibility-panel" aria-label="Fechar Acessibilidade">Fechar</button>
 
-  
-       <!-- Rodape -->
- 
+    <h2>Acessibilidade</h2>
+
+    <div class="accessibility-option">
+        <h3>Cego</h3>
+        <p>Contextualiza a Página, ativa a Navegação por Teclado e Texto Alternativo.</p>
+        <label class="switch">
+            <input type="checkbox" id="blind-mode">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <div class="accessibility-option">
+        <h3>Baixa Visão</h3>
+        <p>Sublinha Links e Títulos, Formata Fontes, Ativa o Ampliador de Texto, etc.</p>
+        <label class="switch">
+            <input type="checkbox" id="low-vision-mode">
+            <span class="slider"></span>
+        </label>
+    </div>
+
+    <!-- Adicionar mais opções conforme necessário -->
+
+    <!-- Opções de contraste e tamanhos -->
+    <!-- <h3>Tamanho da Fonte</h3>
+    <button id="increase-font" aria-label="Aumentar tamanho da fonte">A+</button>
+    <button id="decrease-font" aria-label="Diminuir tamanho da fonte">A-</button>
+
+    <h3>Contraste</h3>
+    <button id="high-contrast" aria-label="Alto Contraste">Alto Contraste</button>
+    <button id="normal-contrast" aria-label="Contraste Normal">Contraste Normal</button>
+</div>  -->
+
+<!--Fim-->
   <footer>
     <div class="container">
       <div class="col-lg-12">
-        <p>Copyright © 2024 EL3MENTAR@Mz. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="" rel="nofollow" target="_blank">Hr_Chirruta</a> & <a href="https://github.com/Eng-M10" rel="nofollow" target="_blank">M_10</a></p>
+        <p>Copyright © 2024 EL3MENTAR@Mz. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="" rel="nofollow" target="_blank">Hr_Chirruta</a> & <a href="" rel="nofollow" target="_blank">M_10</a></p>
       </div>
     </div>
   </footer>
@@ -766,185 +718,42 @@ input:checked + .slider:before {
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script src="assets/js/effects.js"></script>
-  <script src="assets/js/mailsender.js"></script>
-  
-  <!-- <script>
-    // Abrir e fechar o painel
+  <script>
     document.getElementById('accessibility-toggle').addEventListener('click', function() {
-        var panel = document.getElementById('accessibility-panel');
-        panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
-    });
-
-    document.getElementById('close-accessibility-panel').addEventListener('click', function() {
-        document.getElementById('accessibility-panel').style.display = 'none';
-    });
-
-    // Modo Cego 
-    document.getElementById('blind-mode').addEventListener('change', function() {
-        if (this.checked) {
-            document.body.setAttribute('tabindex', '0'); // navegacao por teclado
-            alert("Modo Cego Ativado: Navegação por teclado habilitada.");
+        // Alterna a classe 'accessibility-enabled' no body
+        document.body.classList.toggle('accessibility-enabled');
+        
+        // Atualiza o texto e o estado do botão
+        if(document.body.classList.contains('accessibility-enabled')) {
+            this.setAttribute('aria-label', 'Desativar Acessibilidade');
         } else {
-            document.body.removeAttribute('tabindex');
-            alert("Modo Cego Desativado.");
+            this.setAttribute('aria-label', 'Ativar Acessibilidade');
         }
     });
-
-    // Modo Baixa Visão -
-    document.getElementById('low-vision-mode').addEventListener('change', function() {
-        if (this.checked) {
-            document.body.classList.add('high-contrast');
-            document.body.classList.add('large-font');
-            alert("Modo Baixa Visão Ativado: Alto contraste e fontes maiores.");
-        } else {
-            document.body.classList.remove('high-contrast');
-            document.body.classList.remove('large-font');
-            alert("Modo Baixa Visão Desativado.");
-        }
-    });
-
-    // Aumentar e diminuir o tamanho da fonte
-    let fontSize = 16; 
     document.getElementById('increase-font').addEventListener('click', function() {
-        fontSize += 2; // Aumenta o tamanho da fonte
-        applyFontSize();
-    });
-
-    document.getElementById('decrease-font').addEventListener('click', function() {
-        fontSize -= 2; // aqui a cena diminui o tamanho
-        applyFontSize();
-    });
-
-    function applyFontSize() {
-        // Aplica o tamanho de fonte a todos os elememtos
-        const elements = document.querySelectorAll('body, .card, .card-title, .card-text'); 
-        elements.forEach(el => {
-            el.style.fontSize = `${fontSize}px`;
-        });
-    }
-
-    // a cena muda o contraste
-    document.getElementById('high-contrast').addEventListener('click', function() {
-        document.body.classList.add('high-contrast');
-    });
-
-    document.getElementById('normal-contrast').addEventListener('click', function() {
-        document.body.classList.remove('high-contrast');
-    });
-</script> -->
- <!-- JavaScript -->
- <script>document.addEventListener("DOMContentLoaded", function () {
-  const toggleButton = document.getElementById("accessibility-toggle");
-  const panel = document.getElementById("accessibility-panel");
-  const closeButton = document.getElementById("close-accessibility-panel");
-
-  // Abrir e fechar painel
-  toggleButton.addEventListener("click", function () {
-      const isHidden = panel.getAttribute("aria-hidden") === "true";
-      panel.setAttribute("aria-hidden", !isHidden);
-      if (!isHidden) {
-          panel.focus();
-      }
-  });
-
-  closeButton.addEventListener("click", function () {
-      panel.setAttribute("aria-hidden", "true");
-  });
-
-  // Modo Cego
-  document.getElementById("blind-mode").addEventListener("change", function (e) {
-      const isChecked = e.target.checked;
-      document.body.style.outline = isChecked ? "5px dashed #007bff" : "none";
-      alertOrSpeak(isChecked ? "Modo cego ativado" : "Modo cego desativado");
-  });
-
-  // Modo Baixa Visão
-  document.getElementById("low-vision-mode").addEventListener("change", function (e) {
-      const isChecked = e.target.checked;
-      document.body.style.fontSize = isChecked ? "1.5rem" : "";
-      document.body.style.backgroundColor = isChecked ? "#000" : "";
-      document.body.style.color = isChecked ? "#fff" : "";
-      alertOrSpeak(isChecked ? "Modo baixa visão ativado" : "Modo baixa visão desativado");
-  });
-
-  // Controle de Fonte
-  document.getElementById("increase-font").addEventListener("click", function () {
-      adjustFontSize("increase");
-  });
-
-  document.getElementById("decrease-font").addEventListener("click", function () {
-      adjustFontSize("decrease");
-  });
-
-  // Contraste
-  document.getElementById("high-contrast").addEventListener("click", function () {
-      document.body.style.backgroundColor = "#000";
-      document.body.style.color = "#fff";
-      alertOrSpeak("Alto contraste ativado");
-  });
-
-  document.getElementById("normal-contrast").addEventListener("click", function () {
-      document.body.style.backgroundColor = "";
-      document.body.style.color = "";
-      alertOrSpeak("Contraste normal ativado");
-  });
-
-  // Ajustar Fonte
-  function adjustFontSize(action) {
-      const html = document.documentElement;
-      const currentSize = parseFloat(getComputedStyle(html).fontSize);
-      const newSize = action === "increase" ? currentSize * 1.1 : currentSize * 0.9;
-      html.style.fontSize = `${newSize}px`;
-  }
-
-  // Feedback por áudio ou texto
-  function alertOrSpeak(message) {
-      alert(message);
-      const utterance = new SpeechSynthesisUtterance(message);
-      utterance.lang = "pt-PT";
-      window.speechSynthesis.speak(utterance);
-  }
+    document.body.style.fontSize = 'larger';
 });
+
+document.getElementById('decrease-font').addEventListener('click', function() {
+    document.body.style.fontSize = 'smaller';
+});
+
+document.getElementById('high-contrast').addEventListener('click', function() {
+    document.body.style.backgroundColor = '#000';
+    document.body.style.color = '#fff';
+});
+
+document.getElementById('normal-contrast').addEventListener('click', function() {
+    document.body.style.backgroundColor = '';
+    document.body.style.color = '';
+});
+
+// Função para fechar o painel
+document.getElementById('close-accessibility-panel').addEventListener('click', function() {
+    document.getElementById('accessibility-panel').style.display = 'none';
+});
+
 </script>
- <script src="script.js"></script>
- <script>
-     // Função para abrir o modal
-function openModal() {
- document.getElementById("contactModal").style.display = "block";
-}
-
-// Função para fechar o modal
-function closeModal() {
- document.getElementById("contactModal").style.display = "none";
-}
-
- </script>
- <script>
-  // Selecionar os elementos
-  const modal = document.getElementById("videoModal");
-  const openButton = document.getElementById("openVideo");
-  const closeButton = document.querySelector(".close");
-
-  // Abrir o modal ao clicar no botão
-  openButton.addEventListener("click", (event) => {
-    event.preventDefault(); 
-    modal.style.display = "flex"; // Torna o modal visível
-  });
-
-  // Fechar o modal ao clicar no botão "X"
-  closeButton.addEventListener("click", () => {
-    modal.style.display = "none"; // Esconde o modal
-  });
-
-  // Fechar o modal ao clicar fora do conteúdo
-  window.addEventListener("click", (event) => {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  });
-</script>
-
 
   </body>
 </html>
