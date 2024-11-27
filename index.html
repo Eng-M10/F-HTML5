@@ -27,21 +27,6 @@
   </head>
 
 <body>
-  <!-- Inicio do corpo da página -->
-
-  <!-- Conteúdo da página -->
-
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
-
 <!-- Conteúdo da página -->
 
 <div vw class="enabled">
@@ -76,11 +61,6 @@
                     <a href="index.html" class="logo">
                         <h1>EL3MENTAR</h1>
                     </a>
-                    <!-- ***** Logo End ***** -->
-                    
-                    <!-- ***** Accessibility Toggle Start ***** -->
-<!-- Botão de acessibilidade para abrir o painel -->
-<!-- Botão de Acessibilidade -->
 <!-- Botão de Acessibilidade -->
 <button id="accessibility-toggle" class="btn accessibility-btn" aria-label="Abrir painel de acessibilidade">
   <i class="fa fa-universal-access" aria-hidden="true"></i>
@@ -772,183 +752,41 @@ input:checked + .slider:before {
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
-  <script src="assets/js/effects.js"></script>
-  <script src="assets/js/mailsender.js"></script>
-  
-  <!-- <script>
-    // Abrir e fechar o painel
+  <script>
     document.getElementById('accessibility-toggle').addEventListener('click', function() {
-        var panel = document.getElementById('accessibility-panel');
-        panel.style.display = (panel.style.display === 'block') ? 'none' : 'block';
-    });
-
-    document.getElementById('close-accessibility-panel').addEventListener('click', function() {
-        document.getElementById('accessibility-panel').style.display = 'none';
-    });
-
-    // Modo Cego 
-    document.getElementById('blind-mode').addEventListener('change', function() {
-        if (this.checked) {
-            document.body.setAttribute('tabindex', '0'); // navegacao por teclado
-            alert("Modo Cego Ativado: Navegação por teclado habilitada.");
+        // Alterna a classe 'accessibility-enabled' no body
+        document.body.classList.toggle('accessibility-enabled');
+        
+        // Atualiza o texto e o estado do botão
+        if(document.body.classList.contains('accessibility-enabled')) {
+            this.setAttribute('aria-label', 'Desativar Acessibilidade');
         } else {
-            document.body.removeAttribute('tabindex');
-            alert("Modo Cego Desativado.");
+            this.setAttribute('aria-label', 'Ativar Acessibilidade');
         }
     });
-
-    // Modo Baixa Visão -
-    document.getElementById('low-vision-mode').addEventListener('change', function() {
-        if (this.checked) {
-            document.body.classList.add('high-contrast');
-            document.body.classList.add('large-font');
-            alert("Modo Baixa Visão Ativado: Alto contraste e fontes maiores.");
-        } else {
-            document.body.classList.remove('high-contrast');
-            document.body.classList.remove('large-font');
-            alert("Modo Baixa Visão Desativado.");
-        }
-    });
-
-    // Aumentar e diminuir o tamanho da fonte
-    let fontSize = 16; 
     document.getElementById('increase-font').addEventListener('click', function() {
-        fontSize += 2; // Aumenta o tamanho da fonte
-        applyFontSize();
-    });
-
-    document.getElementById('decrease-font').addEventListener('click', function() {
-        fontSize -= 2; // aqui a cena diminui o tamanho
-        applyFontSize();
-    });
-
-    function applyFontSize() {
-        // Aplica o tamanho de fonte a todos os elememtos
-        const elements = document.querySelectorAll('body, .card, .card-title, .card-text'); 
-        elements.forEach(el => {
-            el.style.fontSize = `${fontSize}px`;
-        });
-    }
-
-    // a cena muda o contraste
-    document.getElementById('high-contrast').addEventListener('click', function() {
-        document.body.classList.add('high-contrast');
-    });
-
-    document.getElementById('normal-contrast').addEventListener('click', function() {
-        document.body.classList.remove('high-contrast');
-    });
-</script> -->
- <!-- JavaScript -->
- <script>document.addEventListener("DOMContentLoaded", function () {
-  const toggleButton = document.getElementById("accessibility-toggle");
-  const panel = document.getElementById("accessibility-panel");
-  const closeButton = document.getElementById("close-accessibility-panel");
-
-  // Abrir e fechar painel
-  toggleButton.addEventListener("click", function () {
-      const isHidden = panel.getAttribute("aria-hidden") === "true";
-      panel.setAttribute("aria-hidden", !isHidden);
-      if (!isHidden) {
-          panel.focus();
-      }
-  });
-
-  closeButton.addEventListener("click", function () {
-      panel.setAttribute("aria-hidden", "true");
-  });
-
-  // Modo Cego
-  document.getElementById("blind-mode").addEventListener("change", function (e) {
-      const isChecked = e.target.checked;
-      document.body.style.outline = isChecked ? "5px dashed #007bff" : "none";
-      alertOrSpeak(isChecked ? "Modo cego ativado" : "Modo cego desativado");
-  });
-
-  // Modo Baixa Visão
-  document.getElementById("low-vision-mode").addEventListener("change", function (e) {
-      const isChecked = e.target.checked;
-      document.body.style.fontSize = isChecked ? "1.5rem" : "";
-      document.body.style.backgroundColor = isChecked ? "#000" : "";
-      document.body.style.color = isChecked ? "#fff" : "";
-      alertOrSpeak(isChecked ? "Modo baixa visão ativado" : "Modo baixa visão desativado");
-  });
-
-  // Controle de Fonte
-  document.getElementById("increase-font").addEventListener("click", function () {
-      adjustFontSize("increase");
-  });
-
-  document.getElementById("decrease-font").addEventListener("click", function () {
-      adjustFontSize("decrease");
-  });
-
-  // Contraste
-  document.getElementById("high-contrast").addEventListener("click", function () {
-      document.body.style.backgroundColor = "#000";
-      document.body.style.color = "#fff";
-      alertOrSpeak("Alto contraste ativado");
-  });
-
-  document.getElementById("normal-contrast").addEventListener("click", function () {
-      document.body.style.backgroundColor = "";
-      document.body.style.color = "";
-      alertOrSpeak("Contraste normal ativado");
-  });
-
-  // Ajustar Fonte
-  function adjustFontSize(action) {
-      const html = document.documentElement;
-      const currentSize = parseFloat(getComputedStyle(html).fontSize);
-      const newSize = action === "increase" ? currentSize * 1.1 : currentSize * 0.9;
-      html.style.fontSize = `${newSize}px`;
-  }
-
-  // Feedback por áudio ou texto
-  // function alertOrSpeak(message) {
-  //     alert(message);
-  //     const utterance = new SpeechSynthesisUtterance(message);
-  //     utterance.lang = "pt-PT";
-  //     window.speechSynthesis.speak(utterance);
-  // }
+    document.body.style.fontSize = 'larger';
 });
-</script>
- <script src="script.js"></script>
- <script>
-     // Função para abrir o modal
-function openModal() {
- document.getElementById("contactModal").style.display = "block";
-}
 
-// Função para fechar o modal
-function closeModal() {
- document.getElementById("contactModal").style.display = "none";
-}
+document.getElementById('decrease-font').addEventListener('click', function() {
+    document.body.style.fontSize = 'smaller';
+});
 
- </script>
- <script>
-  // Selecionar os elementos
-  const modal = document.getElementById("videoModal");
-  const openButton = document.getElementById("openVideo");
-  const closeButton = document.querySelector(".close");
+document.getElementById('high-contrast').addEventListener('click', function() {
+    document.body.style.backgroundColor = '#000';
+    document.body.style.color = '#fff';
+});
 
-  // Abrir o modal ao clicar no botão
-  openButton.addEventListener("click", (event) => {
-    event.preventDefault(); 
-    modal.style.display = "flex"; // Torna o modal visível
-  });
+document.getElementById('normal-contrast').addEventListener('click', function() {
+    document.body.style.backgroundColor = '';
+    document.body.style.color = '';
+});
 
-  // Fechar o modal ao clicar no botão "X"
-  closeButton.addEventListener("click", () => {
-    modal.style.display = "none"; // Esconde o modal
-  });
+// Função para fechar o painel
+document.getElementById('close-accessibility-panel').addEventListener('click', function() {
+    document.getElementById('accessibility-panel').style.display = 'none';
+});
 
-  // Fechar o modal ao clicar fora do conteúdo
-  window.addEventListener("click", (event) => {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  });
 </script>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
